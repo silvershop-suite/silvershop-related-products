@@ -12,7 +12,7 @@ use SilverStripe\Model\List\SS_List;
 
 /**
  * "Customers who viewed this also viewed" — other products seen by visitors who viewed this one, ranked by co-view
- * count. Soft-depends on silvershop/analytics — returns nothing when its ProductView model is not installed.
+ * count. Soft-depends on silvershop-suite/analytics — returns nothing when its ProductView model is not installed.
  */
 class AlsoViewedProvider implements RelatedProductsProvider
 {

@@ -11,7 +11,7 @@ use SilverStripe\Model\List\SS_List;
 
 /**
  * Related products that share a category with the given product (most popular first) — the WooCommerce-style default.
- * Uses the effective-category index from silvershop/category-index when present (recursive, ancestors included),
+ * Uses the effective-category index from silvershop-suite/category-index when present (recursive, ancestors included),
  * otherwise the product's own primary + secondary categories.
  */
 class CategoryRelatedProvider implements RelatedProductsProvider

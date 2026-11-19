@@ -10,8 +10,8 @@ use SilverStripe\Model\List\ArrayList;
 use SilverStripe\Model\List\SS_List;
 
 /**
- * Other products of the same brand (most popular first). Soft-depends on silvershop/brands — returns nothing when the
- * Brand relation is absent or the product has no brand.
+ * Other products of the same brand (most popular first). Soft-depends on silvershop-suite/brands — returns nothing when
+ * the Brand relation is absent or the product has no brand.
  */
 class BrandProvider implements RelatedProductsProvider
 {
