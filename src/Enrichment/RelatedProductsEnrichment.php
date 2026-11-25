@@ -7,6 +7,12 @@ namespace SilverShop\RelatedProducts\Enrichment;
 use SilverShop\Api\Enrichment\ProductEnrichmentExtension;
 use SilverShop\Page\Product;
 
+// silvershop-suite/api is optional: without it this class stays undeclared,
+// because a flush loads every class and would fail on the missing parent.
+if (!class_exists(ProductEnrichmentExtension::class)) {
+    return;
+}
+
 /**
  * Adds `upSells`, `relatedItems` and `crossSells` product-id arrays to the serialised product when
  * silvershop-suite/related-products is installed.
